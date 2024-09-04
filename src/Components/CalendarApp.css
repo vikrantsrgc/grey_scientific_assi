@@ -1,0 +1,239 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+  }
+  
+  /* Calendar App Styles */
+  
+  .calendar-app {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fffbfb;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .calendar {
+    margin-bottom: 20px;
+  }
+  
+  .heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .navigate-date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .month {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .year {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .bx-chevron-left, .bx-chevron-right {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .weekdays {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .weekdays span {
+    width: 14.28%;
+    text-align: center;
+  }
+  
+  .days {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+  
+  .days span {
+    width: 14.28%;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  /* Events Styles */
+  
+  .events {
+    margin-top: 20px;
+  }
+  
+  .event-popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f5efef;
+    /* color: white; */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* display: none; */
+  }
+  
+  .event-popup-time {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .time-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    /* padding: 50px; */
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .hours, .minute {
+    width: 70px;
+    height: 30px;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ddd;
+  }
+  .text-area{
+    width: 200px;
+    height: 100px;
+    /* background-color: black; */
+
+  }
+  
+  .event-popup-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .close-event-popup {
+    position: absolute;
+    /* align-items: center; */
+    top: 5px;
+    right: 7px;
+    background-color: #ddd;
+    color: #333;
+    /* padding: 5px 5px; */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .event {
+    background-color: #c4aeae;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .event-date-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .event-date {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .event-time {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .event-text {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .event-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .bx.bxs-edit-alt, .bx.bxs-message-alt-x {
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .current-day{
+    background-color: black;
+    color: yellow;
+  }
+  
+  /* Responsive CSS */
+  
+  /* Laptop */
+  @media (max-width: 1200px) {
+    .calendar-app {
+      max-width: 600px;
+    }
+  }
+  
+  /* Tablet */
+  @media (max-width: 768px) {
+    .calendar-app {
+      max-width: 400px;
+    }
+    .weekdays span {
+      width: 20%;
+    }
+    .days span {
+      width: 20%;
+    }
+  }
+  
+
+  
+   
